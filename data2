@@ -1,0 +1,24 @@
+
+#include <iostream>
+
+using namespace std;
+
+struct fruit {
+    char name[25];
+    double mass;
+    double calories;
+
+    void print() {
+        cout << name << "\n" << mass << "\n" << calories << endl;
+    }
+
+};
+
+int main() {
+    fruit snack[3] = {{"grapefruit", 2.3, 350},
+                         {"orange",        2.1, 400},
+                         {"Apple",    4.5, 345}};
+    for (int i = 0; i <= 2; i++)
+        snack[i].print();
+    return 0;
+}
