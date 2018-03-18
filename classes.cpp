@@ -57,7 +57,7 @@ class dogs : public carnivores, public carnivoresPet  // класс собак
 private:
     string voice; //голос
 public:
-    dogs():voice("woof!woof!"){} //собаки говорят гав
+    dogs():Animal(14, false), voice("woof!woof!"){} //собаки говорят гав
     friend void nation(string America); // дружественная функция показа родины кошки используя статичные данные
     void showVoice(){cout<<voice<<endl;} //вызов функции
     ~dogs(){} // деструтор
